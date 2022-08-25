@@ -9,6 +9,7 @@
 		"precommit-msg": "echo 'generating docs first...' && exit 0"
 	},
 	"pre-commit": [
+		"precommit-msg",
 		"generate-docs"
 	],
 	"repository": {
