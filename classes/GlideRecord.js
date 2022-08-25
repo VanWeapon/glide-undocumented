@@ -41,4 +41,31 @@ gr.addEncodedQuery("active=true&data=valid");
 gs.info(gr.isValidEncodedQuery()); //false
      */
     isValidEncodedQuery(queryString) { }
+
+    /**
+     * Seems to always return undefined regardless of how big the query is, and at what stage the method is called.
+     * @returns {undefined} in the following cases
+     * @example
+var gr = new GlideRecord("incident");
+gr.addQuery("active",true);
+gs.info(gr.largeResultExpected()); //undefined
+
+var gr = new GlideRecord("incident");
+gr.addQuery("active",true);
+gr.query()
+gs.info(gr.largeResultExpected()); //undefined
+
+var gr = new GlideRecord("incident");
+gr.addQuery("active",true);
+gr.query();
+gr.next();
+gs.info(gr.largeResultExpected()); //undefined
+
+var gr = new GlideRecord("sys_metadata");
+...
+gs.info(gr.largeResultExpected()); //undefined
+
+
+     */
+    largeResultExpected() { }
 };
