@@ -6,7 +6,8 @@ This is a for-fun project looking to see if we can figure out what all the undoc
 
 Run the following in a background script to see all the accessible methods for a given Glide class
 ```js
-var methods = Object.getOwnPropertyNames(GlideRecord.prototype); // Sub out GlideRecord for your given class
+// Sub out GlideRecord for your given class
+var methods = Object.getOwnPropertyNames(GlideRecord.prototype); 
 
 for(var x in methods){
     try{
