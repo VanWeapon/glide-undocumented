@@ -34,6 +34,9 @@
 			"sections": ["Classes"]
 		}
 	},
+	"templates": {
+		"cleverLinks": true
+	},
 
 	"markdown": {
 		"hardwrap": false,

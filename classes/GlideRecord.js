@@ -71,16 +71,16 @@ gs.info(gr.largeResultExpected()); //undefined
 
 
     /**
-     * Prevents editing any GlideRecords which are returned from a query
-     * @see isReadOnly
+     * Prevents editing any GlideRecords which are returned from a query and can be tested with {@link GlideRecord#isReadOnly}
+     * 
      * @see https://community.servicenow.com/community?id=community_blog&sys_id=b6e5716c1bd3c510587a11751a4bcbcc
      */
     makeReadonly() { }
 
 
     /**
-     * Checks whether a GlideRecord result has been made read-only with makeReadonly
-     * @see makeReadonly
+     * Checks whether a GlideRecord result has been made read-only with {@link GlideRecord#makeReadonly}
+     * 
      * @see https://community.servicenow.com/community?id=community_blog&sys_id=b6e5716c1bd3c510587a11751a4bcbcc
      * 
      * @returns {boolean} true if the GR has been locked with makeReadonly
