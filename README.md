@@ -33,10 +33,10 @@ You will see output similar to this:
 
 where `arity` is the number of arguments this method can possibly take. Not all of them may be mandatory or even used ever.
 
-For new classes, add a file called GlideRecord.js (match the class name) and add documentation in the form of JSDoc comments.
+For new classes, add a file called GlideRecord.js (match the class name) in the classes folder and add documentation in the form of JSDoc comments.
 
 # How to use
 
 1. Install [JSDoc](https://github.com/jsdoc/jsdoc) globally
-2. From the root folder, run `jsdoc ./*` which will generate the files in an `out` folder
-3. Open `/out/index.html` in your browser of choice
+2. From the root folder, run `npm run generate-docs` which will generate the files in a `docs` folder
+3. Open `/docs/index.html` in your browser of choice

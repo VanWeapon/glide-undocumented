@@ -1,0 +1,26 @@
+{
+	"name": "glide-undocumented",
+	"version": "1.0.0",
+	"description": "This is a for-fun project looking to see if we can figure out what all the undocumented methods in ServiceNow's Glide APIs do and write them down.",
+	"main": "README.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"generate-docs": "jsdoc --configure jsdoc.json --verbose"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/VanWeapon/glide-undocumented.git"
+	},
+	"keywords": [
+		"servicenow"
+	],
+	"author": "Luke Van Epen",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/VanWeapon/glide-undocumented/issues"
+	},
+	"homepage": "https://github.com/VanWeapon/glide-undocumented#readme",
+	"devDependencies": {
+		"clean-jsdoc-theme": "^4.1.7"
+	}
+}
