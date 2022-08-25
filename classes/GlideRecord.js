@@ -68,4 +68,22 @@ gs.info(gr.largeResultExpected()); //undefined
 
      */
     largeResultExpected() { }
+
+
+    /**
+     * Prevents editing any GlideRecords which are returned from a query
+     * @see isReadOnly
+     * @see https://community.servicenow.com/community?id=community_blog&sys_id=b6e5716c1bd3c510587a11751a4bcbcc
+     */
+    makeReadonly();
+
+
+    /**
+     * Checks whether a GlideRecord result has been made read-only with makeReadonly
+     * @see makeReadonly
+     * @see https://community.servicenow.com/community?id=community_blog&sys_id=b6e5716c1bd3c510587a11751a4bcbcc
+     * 
+     * @returns {boolean} true if the GR has been locked with makeReadonly
+     */
+    isReadOnly();
 };
