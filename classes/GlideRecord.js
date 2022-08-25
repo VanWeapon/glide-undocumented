@@ -34,6 +34,11 @@ class GlideRecord {
      * Tests whether an encoded query string is valid for the given table
      * @param {string} queryString an encoded query to test
      * @returns {boolean} true if the query string is valid, false if not.
+     * @example 
+var gr = new GlideRecord("incident");
+gr.addEncodedQuery("active=true&data=valid");
+
+gs.info(gr.isValidEncodedQuery()); //false
      */
     isValidEncodedQuery(queryString) { }
 };
