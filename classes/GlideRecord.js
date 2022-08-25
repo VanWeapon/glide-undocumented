@@ -75,7 +75,7 @@ gs.info(gr.largeResultExpected()); //undefined
      * @see isReadOnly
      * @see https://community.servicenow.com/community?id=community_blog&sys_id=b6e5716c1bd3c510587a11751a4bcbcc
      */
-    makeReadonly();
+    makeReadonly()
 
 
     /**
@@ -85,5 +85,5 @@ gs.info(gr.largeResultExpected()); //undefined
      * 
      * @returns {boolean} true if the GR has been locked with makeReadonly
      */
-    isReadOnly();
+    isReadOnly()
 };
