@@ -17,8 +17,6 @@ for (var x in methods) {
 }
 ```
 
-Add a file called GlideRecord.js (match the api name) and add documentation in the form of JSDoc comments.
-
 If you run this code
 
 ```js
@@ -34,6 +32,8 @@ You will see output similar to this:
 ```
 
 where `arity` is the number of arguments this method can possibly take. Not all of them may be mandatory or even used ever.
+
+For new classes, add a file called GlideRecord.js (match the class name) and add documentation in the form of JSDoc comments.
 
 # How to use
 
