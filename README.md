@@ -2,6 +2,8 @@
 
 This is a for-fun project looking to see if we can figure out what all the undocumented methods in ServiceNow's Glide APIs do and write them down.
 
+[Live Documentation Site](https://vanweapon.github.io/glide-undocumented/)
+
 # Contribution
 
 Run the following in a background script to see all the accessible methods for a given Glide class
