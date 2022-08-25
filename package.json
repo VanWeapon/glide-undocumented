@@ -5,8 +5,12 @@
 	"main": "README.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"generate-docs": "jsdoc --configure jsdoc.json --verbose"
+		"generate-docs": "jsdoc --configure jsdoc.json --verbose",
+		"precommit-msg": "generating docs first..."
 	},
+	"pre-commit": [
+		"generate-docs"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/VanWeapon/glide-undocumented.git"
@@ -21,6 +25,7 @@
 	},
 	"homepage": "https://github.com/VanWeapon/glide-undocumented#readme",
 	"devDependencies": {
-		"clean-jsdoc-theme": "^4.1.7"
+		"clean-jsdoc-theme": "^4.1.7",
+		"pre-commit": "^1.2.2"
 	}
 }
