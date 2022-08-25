@@ -86,4 +86,270 @@ gs.info(gr.largeResultExpected()); //undefined
      * @returns {boolean} true if the GR has been locked with makeReadonly
      */
     isReadOnly() { }
+
+
+    targetExtension() { }
+
+    getEncodedQuery() { }
+
+    getRecordClassName() { }
+
+    putCurrent() { }
+
+    popCurrent() { }
+
+    createElement() { }
+
+    updateElement() { }
+
+    createIndex() { }
+
+    dropIndex() { }
+
+    evaluateAsDefault() { }
+
+    addJoinQuery() { }
+
+    addQuery() { }
+
+    addNullQuery() { }
+
+    addNotNullQuery() { }
+
+    appendOrQuery() { }
+
+    addActiveQuery() { }
+
+    addInactiveQuery() { }
+
+    orderBy() { }
+
+    orderByDesc() { }
+
+    addEncodedQuery() { }
+
+    isEncodedQueryValid() { }
+
+    moreEncodedQuery() { }
+
+    setLimit() { }
+
+    chooseWindow() { }
+
+    applyRowSecurity() { }
+
+    query() { }
+
+    _query() { }
+
+    queryNoDomain() { }
+
+    getSetRowCount() { }
+
+    getRowCount() { }
+
+    getRowNumber() { }
+
+    isForeignTable() { }
+
+    isMetadata() { }
+
+    isValidMetadataRecord() { }
+
+    getRelatedRecords() { }
+
+    putOptimizers() { }
+
+    isView() { }
+
+    isReadonly() { }
+
+    makeReadonly() { }
+
+    getRelatedTables() { }
+
+    getRelatedLists() { }
+
+    getLabel() { }
+
+    getPlural() { }
+
+    update() { }
+
+    updateWithReferences() { }
+
+    updateLazy() { }
+
+    updateNoDomain() { }
+
+    scheduleScript() { }
+
+    initialize() { }
+
+    applyTemplate() { }
+
+    insertLazy() { }
+
+    operation() { }
+
+    insert() { }
+
+    insertWithReferences() { }
+
+    insertOrUpdate() { }
+
+    deleteRecord() { }
+
+    incrementViewCount() { }
+
+    deleteMultiple() { }
+
+    addValue() { }
+
+    updateMultiple() { }
+
+    next() { }
+
+    nextRecord() { }
+
+    _next() { }
+
+    _operation() { }
+
+    hasNext() { }
+
+    newRecord() { }
+
+    saveLocation() { }
+
+    setLocation() { }
+
+    restoreLocation() { }
+
+    getLocation() { }
+
+    getDisplayValue() { }
+
+    getEscapedDisplayValue() { }
+
+    getClassDisplayValue() { }
+
+    getFields() { }
+
+    findForeignKey() { }
+
+    close() { }
+
+    getTableName() { }
+
+    find() { }
+
+    setValue() { }
+
+    setDisplayValue() { }
+
+    getValue() { }
+
+    getUniqueValue() { }
+
+    setAbortAction() { }
+
+    isActionAborted() { }
+
+    instanceOf() { }
+
+    isValid() { }
+
+    isValidRecord() { }
+
+    isNewRecord() { }
+
+    hasAttachments() { }
+
+    applyEncodedQuery() { }
+
+    getDisplayName() { }
+
+    setNewGuid() { }
+
+    setNewGuidValue() { }
+
+    isWorkflow() { }
+
+    setEngineParameter() { }
+
+    getEngineParameter() { }
+
+    setUseEngines() { }
+
+    setWorkflow() { }
+
+    setForceUpdate() { }
+
+    getED() { }
+
+    getAttribute() { }
+
+    getBooleanAttribute() { }
+
+    canWrite() { }
+
+    canCreate() { }
+
+    canRead() { }
+
+    notifyUser() { }
+
+    hasRightsTo() { }
+
+    canDelete() { }
+
+    isValidField() { }
+
+    getElement() { }
+
+    getLastErrorMessage() { }
+
+    getLink() { }
+
+    setQueryReferences() { }
+
+    enableSessionLanguageJoin() { }
+
+    attachGlideListener() { }
+
+    setSystem() { }
+
+    autoSysFields() { }
+
+    changes() { }
+
+    getElements() { }
+
+    addDomainQuery() { }
+
+    setNoCount() { }
+
+    onePassQuery() { }
+
+    setCategory() { }
+
+    getCategory() { }
+
+    isInGlobalScope() { }
+
+    isInStoreScope() { }
+
+    isInSelectedScope() { }
+
+    getTableScope() { }
+
+    getTableScopeName() { }
+
+    getTableScopeId() { }
+
+    addFunction() { }
+
+    newGlideRecordNamed() { }
+
 };
