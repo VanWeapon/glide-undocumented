@@ -1,4 +1,6 @@
-
+/**
+ * Static class used to check whether a {@link GlideRecord} matches a given encoded query
+ */
 class GlideFilter {
 
     /**
