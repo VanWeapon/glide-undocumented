@@ -43,9 +43,10 @@ For new classes, add a file called GlideRecord.js (match the class name) in the 
 
 #### Commit process
 
-1. `npm run generate-docs`
-2. `git add *`
-3. `git commit -m "message of what you added"`
+The docs are auto-generated with a pre-commit stage.
+
+1. `git add *`
+2. `git commit -m "message of what you added"`
 
 ### Previewing changes locally before pushing
 
