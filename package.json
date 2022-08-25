@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"generate-docs": "jsdoc --configure jsdoc.json --verbose",
-		"precommit-msg": "generating docs first..."
+		"precommit-msg": "echo 'generating docs first...' && exit 0"
 	},
 	"pre-commit": [
 		"generate-docs"
