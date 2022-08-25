@@ -19,6 +19,22 @@ for (var x in methods) {
 
 Add a file called GlideRecord.js (match the api name) and add documentation in the form of JSDoc comments.
 
+If you run this code
+
+```js
+gs.info(GlideRecord.prototype.isValidEncodedQuery);
+```
+
+You will see output similar to this:
+
+```js
+*** Script: function isValidEncodedQuery() {
+	[native code, arity=1]
+}
+```
+
+where `arity` is the number of arguments this method can possibly take. Not all of them may be mandatory or even used ever.
+
 # How to use
 
 1. Install [JSDoc](https://github.com/jsdoc/jsdoc) globally
