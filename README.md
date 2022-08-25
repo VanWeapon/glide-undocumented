@@ -16,3 +16,8 @@ for(var x in methods){
 }
 ```
 Add a file called GlideRecord.md (to match the api name) and add documentation 
+
+# How to use
+1. Install [JSDoc](https://github.com/jsdoc/jsdoc) globally 
+2. From the root folder, run `jsdoc ./*` which will generate the files in an `out` folder
+3. Open `/out/index.html` in your browser of choice
