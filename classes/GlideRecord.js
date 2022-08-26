@@ -87,8 +87,24 @@ gs.info(gr.largeResultExpected()); //undefined
      */
     isReadOnly() { }
 
-
-    targetExtension() { }
+    /**
+     * only appears once in the platform in the Relationship for Audit
+     * It looks to be used for tables with a Table Rotation set up, where you want to filter your top-level table down to just the table rotation for performance reasons. 
+     * @param {string} tableName - the name of the exact table under the Table Rotation Schedule 
+     * @example
+     * var historySet = new GlideRecord("sys_history_set");
+     * historySet.setLimit(1);
+     * historySet.query();
+     * historySet.next(){
+     *  var lineTable = historySet.getValue("line_table"); // sys_history_line000x
+     *  var historyLines = new GlideRecord("sys_history_line");
+     *      historyLines.addQuery("set", historySet.getUniqueValue());
+     *      historyLines.targetExtension(lineTable);
+     *      historyLines.query();
+     *      ...
+     * }
+     */
+    targetExtension(tableName) { }
 
     getEncodedQuery() { }
 
