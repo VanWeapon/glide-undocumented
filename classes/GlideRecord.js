@@ -91,6 +91,7 @@ gs.info(gr.largeResultExpected()); //undefined
      * only appears once in the platform in the Relationship for Audit
      * It looks to be used for tables with a Table Rotation set up, where you want to filter your top-level table down to just the table rotation for performance reasons. 
      * @param {string} tableName - the name of the exact table under the Table Rotation Schedule 
+     * @see /nav_to.do?uri=sys_relationship.do?sys_id=366eda7b0a0004970a7d925c9258806b
      * @example
      * var historySet = new GlideRecord("sys_history_set");
      * historySet.setLimit(1);
