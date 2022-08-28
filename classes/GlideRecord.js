@@ -181,6 +181,12 @@ gs.info(gr.isValidEncodedQuery()); //false
      */
     createElement() { }
 
+    /**
+     * Similar to {@link GlideRecord#createElement}, used in 1 business rule UpdateElement and fires after a sys_dictionary is updated.
+     * 
+     * @summary Unknown function
+     * @see /nav_to.do?uri=sys_script.do?sys_id=54d4cd4077320110b6d21fd89a5a996a
+     */
     updateElement() { }
 
     createIndex() { }
