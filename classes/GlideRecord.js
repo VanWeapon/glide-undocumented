@@ -7,6 +7,8 @@
 class GlideRecord {
     /**
      * Creates a new instance of the GlideRecord class on the given table   
+     * @summary Documented class
+     * 
      * @param {string} tableName The internal name of the table
      * @see https://developer.servicenow.com/dev.do#!/reference/api/sandiego/server_legacy/c_GlideRecordAPI#r_GlideRecord-GlideRecord_S?navFilter=gliderecord
      */
@@ -16,6 +18,8 @@ class GlideRecord {
 
     /**
      * Retrieve an exact record. This method has official documentation
+     * @summary Documented method
+     * 
      * @param {string} parm1 Either a sys_id or the field name
      * @param {string} parm2 The field value, not required if parm1 is a sys_id
      * @returns {boolean} True if a record was found, false if no record was found.
@@ -32,6 +36,7 @@ class GlideRecord {
 
     /**
      * Tests whether an encoded query string is valid for the given table
+     * @summary Undocumented method
      * @param {string} queryString an encoded query to test
      * @returns {boolean} true if the query string is valid, false if not.
      * @example 
@@ -44,6 +49,8 @@ gs.info(gr.isValidEncodedQuery()); //false
 
     /**
      * Seems to always return undefined regardless of how big the query is, and at what stage the method is called.
+     * @summary Unknown function
+     * 
      * @returns {undefined} in the following cases
      * @example
 var gr = new GlideRecord("incident");
@@ -72,7 +79,8 @@ gs.info(gr.largeResultExpected()); //undefined
 
     /**
      * Prevents editing any GlideRecords which are returned from a query and can be tested with {@link GlideRecord#isReadOnly}
-     * 
+     * @summary Undocumented method
+     * @author iamkalai
      * @see https://community.servicenow.com/community?id=community_blog&sys_id=b6e5716c1bd3c510587a11751a4bcbcc
      */
     makeReadonly() { }
@@ -80,6 +88,7 @@ gs.info(gr.largeResultExpected()); //undefined
 
     /**
      * Checks whether a GlideRecord result has been made read-only with {@link GlideRecord#makeReadonly}
+     * @summary Undocumented method
      * 
      * @see https://community.servicenow.com/community?id=community_blog&sys_id=b6e5716c1bd3c510587a11751a4bcbcc
      * 
@@ -90,6 +99,8 @@ gs.info(gr.largeResultExpected()); //undefined
     /**
      * only appears once in the platform in the Relationship for Audit
      * It looks to be used for tables with a Table Rotation set up, where you want to filter your top-level table down to just the table rotation for performance reasons. 
+     * 
+     * @summary Undocumented method
      * @param {string} tableName - the name of the exact table under the Table Rotation Schedule 
      * @see /nav_to.do?uri=sys_relationship.do?sys_id=366eda7b0a0004970a7d925c9258806b
      * @example
@@ -107,6 +118,13 @@ gs.info(gr.largeResultExpected()); //undefined
      */
     targetExtension(tableName) { }
 
+    /**
+     * @description Prints out the filter query that has been built using {@link GlideRecord#addQuery}, {@link GlideRecord#addEncodedQuery}, and {@link GlideRecord#addJoinQuery}
+     * 
+     * @summary Documented method.
+     * @returns {string} The encoded GlideRecord query
+     * @see https://developer.servicenow.com/dev.do#!/reference/api/sandiego/server_legacy/c_GlideRecordAPI#r_GlideRecord-getEncodedQuery_Boolean?navFilter=encodedquery
+     */
     getEncodedQuery() { }
 
     getRecordClassName() { }

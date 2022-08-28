@@ -1,6 +1,7 @@
 
 /**
  * Used for applying aggregation methods to record sets
+ * @summary Documented class
  */
 class GlideAggregate {
     /**
@@ -16,10 +17,26 @@ class GlideAggregate {
      */
     addEncodedQuery(queryString) { }
 
+    /**
+     * Orders the result set by the specified column, in ascending order. 
+     * 
+     * Oldest to newest for dates, lowest to highest for numbers, A-Z for strings
+     * @summary Documented method
+     * 
+     * 
+     * @param {string} fieldName field to order results by
+     */
+    orderBy(fieldName) { }
 
-    orderBy() { }
-
-    orderByDesc() { }
+    /**
+     * Orders the result set by the specified column, in descending order.
+     * 
+     * Newest to oldest for dates, highest to lowest for numbers, A-Z for strings
+     * @summary Documented method
+     * 
+     * @param {string} fieldName field to order results by
+     */
+    orderByDesc(fieldName) { }
 
     getValue() { }
 

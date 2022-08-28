@@ -4,6 +4,11 @@
 		"includePattern": ".js$"
 	},
 
+	"tags": {
+		"allowUnknownTags": true,
+		"dictionaries": ["jsdoc"]
+	},
+
 	"plugins": ["plugins/markdown"],
 
 	"opts": {
@@ -15,6 +20,9 @@
 		"template": "./node_modules/clean-jsdoc-theme",
 		"theme_opts": {
 			"default_theme": "dark",
+			"include_css": ["./custom-styles.css"],
+			"include_js": ["./custom-scripts.js"],
+			"base_url": "https://vanweapon.github.io/glide-undocumented/",
 			"menu": [
 				{
 					"title": "GitHub",

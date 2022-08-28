@@ -7,7 +7,9 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"generate-docs": "jsdoc --configure jsdoc.json --verbose",
 		"precommit-msg": "echo 'generating docs...' && exit 0",
-		"git-add-docs": "git add ./docs/*"
+		"git-add-docs": "git add ./docs/*",
+		"serve": "live-server --open=./docs/index.html",
+		"watch": "npx nodemon --exec \"npm run generate-docs\" --watch ./classes --watch ./custom-styles.css --watch ./custom-scripts.js"
 	},
 	"pre-commit": [
 		"precommit-msg",
@@ -29,6 +31,8 @@
 	"homepage": "https://github.com/VanWeapon/glide-undocumented#readme",
 	"devDependencies": {
 		"clean-jsdoc-theme": "^4.1.7",
+		"live-server": "^1.2.2",
+		"nodemon": "^2.0.19",
 		"pre-commit": "^1.2.2"
 	}
 }
