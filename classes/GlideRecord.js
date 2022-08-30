@@ -94,7 +94,7 @@ gs.info(gr.isValidEncodedQuery()); //false
      * 
      * @returns {boolean} true if the GR has been locked with makeReadonly
      */
-    isReadOnly() { }
+    isReadonly() { }
 
     /**
      * Only appears once in the platform in the Relationship for Audit.
@@ -189,11 +189,25 @@ gs.info(gr.isValidEncodedQuery()); //false
      */
     updateElement() { }
 
+    /**
+     * Unable to find references to this method being called in the base platform. Likely to due with the platform's text-indexing functionality. 
+     * @summary Unknown function
+     */
     createIndex() { }
 
+    /**
+     * Unable to find references to this method being called in the base platform. Likely to due with the platform's text-indexing functionality. 
+     * @summary Unknown function
+     */
     dropIndex() { }
 
-    evaluateAsDefault() { }
+    /**
+     * Unknown function, unused in any OOB scripts.  Takes one argument.
+     * @summary Unknown method
+     * @param {unknown} param1 probably supposed to be either true or false
+     * @returns {unknown}
+     */
+    evaluateAsDefault(param1) { }
 
     addJoinQuery() { }
 
