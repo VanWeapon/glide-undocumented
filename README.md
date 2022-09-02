@@ -8,7 +8,7 @@ This is a for-fun project looking to see if we can figure out what all the undoc
 
 #### Finding and testing undocumented Glide methods
 
-Run the following in a background script to see all the accessible methods for a given Glide class
+Run the following in a background script to see all the accessible methods for a given Glide class. Note that this only works for some classes and not others. E.g. GlideDateTime cannot be accessed this way.
 
 ```js
 // Sub out GlideRecord for your given class
